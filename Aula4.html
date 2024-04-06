@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+<h1>Formulário de Inscrição</h1>
+
+<form id="formulario" onsubmit="enviarInscricao(event)">
+    <h2>Dados do Aluno</h2>
+    <label for="nomeAluno">Nome*:</label>
+    <input type="text" id="nomeAluno" required><br>
+
+    <h2>Dados do Pai</h2>
+    <label for="nomePai">Nome*:</label>
+    <input type="text" id="nomePai" required><br>
+
+    <h2>Dados da Mãe</h2>
+    <label for="nomeMae">Nome*:</label>
+    <input type="text" id="nomeMae" required><br>
+
+    <h2>Dados do Curso</h2>
+    <label for="nomeCurso">Nome do Curso Escolhido*:</label>
+    <input type="text" id="nomeCurso" required><br>
+
+    <button type="submit">Enviar Inscrição</button>
+</form>
+
+<script>
+    async function enviarInscricao(event) {
+        event.preventDefault();
+
+        const dadosInscricao = {
+            aluno: {
+                nome: document.getElementById('nomeAluno').value,
+            },
+            pai: {
+                nome: document.getElementById('nomePai').value,
+            },
+            mae: {
+                nome: document.getElementById('nomeMae').value,
+            },
+            curso: {
+                nome: document.getElementById('nomeCurso').value,
+            }
+        };
+
+    }
+</script>
+</body>
+</html>
