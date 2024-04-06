@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        #menu-superior {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #menu-lateral {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #conteudo {
+            margin-left: 20%;
+            padding: 20px;
+        }
+
+        #rodape {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="menu-superior">
+    Menu Superior
+</div>
+
+<div id="menu-lateral">
+    <h2>Menu Lateral</h2>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</div>
+
+<div id="conteudo">
+    <h1>Conteúdo Principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lectus in velit tincidunt, eu posuere ligula finibus. Suspendisse auctor rhoncus nunc, nec feugiat elit eleifend id. Vestibulum scelerisque mauris nec purus aliquet scelerisque. Morbi nec consectetur nisi, nec egestas arcu. Duis dictum orci sit amet nibh pharetra, sit amet vehicula felis eleifend. Nulla vestibulum sem vitae lacus consequat, ut varius velit ultricies. Aenean in dolor eu magna malesuada iaculis nec eu justo. Curabitur ultricies eros eget risus cursus rutrum. Sed convallis mauris eget felis fermentum, in ultricies purus ultricies. Pellentesque sed risus felis.</p>
+</div>
+
+<div id="rodape">
+    Rodapé
+</div>
+</body>
+</html>
